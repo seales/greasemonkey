@@ -6,7 +6,7 @@
 
 // I paid for this book; don't automatically log me out while I'm reading it.
 window.addEventListener('load', function() {
-	clearTimeout(unsafeWindow.sessionTimeoutID);
+  clearTimeout(unsafeWindow.sessionTimeoutID);
   unsafeWindow.sessionTimeoutAction = function (){};
 }, false);
 
